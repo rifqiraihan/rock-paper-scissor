@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://use.fontawesome.com/d6cddd4a49.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span
+          ><i class="back-icon fa fa-chevron-left" aria-hidden="true"></i></span
+        ><span>LOGO</span>ROCK PAPER SCISSORS
+      </h1>
+    </header>
+
+    <div class="play-area">
+      <div class="left-section">
+        <p class="user-label">PLAYER 1</p>
+        <div class="choices">
+          <div class="choice" id="r">
+            <img src="images/rock.png" alt="Rock" height="100%" width="100%" />
+          </div>
+          <div class="choice" id="p">
+            <img
+              src="images/paper.png"
+              alt="Paper"
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="choice" id="s">
+            <img
+              src="images/scissors.png"
+              alt="Scissors"
+              height="100%"
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="middle-section">
+        <!-- refresh image and vs text -->
+        <div class="result">
+          <p>VS</p>
+        </div>
+        <div class="flip-container">
+          <div class="refresh-icon">
+            <img
+              class="flip-this"
+              onclick="reloadGame()"
+              src="./images/refresh.png"
+              alt="refresh"
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <p class="user-label">COM</p>
+        <div class="choices">
+          <div class="choice" id="r-com">
+            <img src="images/rock.png" alt="Rock" height="100%" width="100%" />
+          </div>
+          <div class="choice" id="p-com">
+            <img
+              src="images/paper.png"
+              alt="Paper"
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="choice" id="s-com">
+            <img
+              src="images/scissors.png"
+              alt="Scissors"
+              height="100%"
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <!-- <div class="result">
+      <p></p>
+
+    <br /><br />
+    <!-- <a href="https://emojipedia.org">*here's the images used for the hands ></a> -->
+    <!-- <a href="https://www.youtube.com/watch?v=JOpedahoKoc">Paper Sound Effects</a> -->
+    <script src="scripts/app.js" charset="utf-8"></script>
+  </body>
+</html>
